@@ -7,7 +7,7 @@ import math
 def square_root(a):
     try:
         if a < 0:
-            raise ValueError("Cannot take the square root of a negative number")
+            raise ValueError
         return math.sqrt(a)
     except ValueError as error:
         print(error)
