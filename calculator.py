@@ -1,12 +1,24 @@
-import math 
+import math
+# https://github.com/jacobsylvestre2005-creator/lab10-AM-JS
+# Partner 1: Jacob Sylvestre
+# Partner 2: Avi McCarthy 
 
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError("Cannot take the square root of a negative number")
+        return math.sqrt(a)
+    except ValueError as error:
+        print(error)
+        raise
 
-One function per operation, in order.
-"""
-# First example
+def hypotenuse(a, b):
+    try:
+        return math.hypot(a, b)
+    except ValueError as error:
+        print(error)
+        raise 
+          
 def add(a, b):
     return a + b
 
