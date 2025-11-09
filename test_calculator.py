@@ -1,8 +1,9 @@
-import unittest
-from calculator import *
 # https://github.com/jacobsylvestre2005-creator/lab10-AM-JS
 # Partner 1: Jacob Sylvestre
 # Partner 2: Avi McCarthy 
+
+import unittest
+from calculator import *
 
 class TestCalculator(unittest.TestCase):
     def test_add(self):

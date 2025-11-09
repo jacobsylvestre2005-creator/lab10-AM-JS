@@ -1,7 +1,8 @@
-import math
 # https://github.com/jacobsylvestre2005-creator/lab10-AM-JS
 # Partner 1: Jacob Sylvestre
 # Partner 2: Avi McCarthy 
+
+import math
 
 def square_root(a):
     try:
@@ -25,8 +26,14 @@ def add(a, b):
 def sub(a, b):
     return a - b
 
+def subtract(a, b):
+    return sub(a, b)
+
 def mul(a, b):
     return a * b
+
+def multiply(a, b):
+    return mul(a, b)
 
 def div(a, b):
     match a:
@@ -34,6 +41,9 @@ def div(a, b):
             raise ZeroDivisionError
         case _:
             return b / a
+        
+def divide(a, b):
+    return div(a, b)
 
 def log(a, b):
     if a <= 0 or a == 1 or b <= 0:
@@ -48,6 +58,6 @@ def logarithm(a, b):
 
 def exp(a, b):
      return a ** b
-
-
-
+ 
+def exponent(a, b):
+    return exp(a, b)
