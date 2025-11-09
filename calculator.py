@@ -29,7 +29,7 @@ def log(a, b):
     else:
         return math.log(b, a)
     
-def log(a, b):
+def logarithm(a, b):
     if b <= 0 or a <= 0 or b == 1:
         raise ValueError("Log not defined for these inputs")
     return math.log(a, b)
